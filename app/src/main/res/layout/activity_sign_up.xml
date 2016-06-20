@@ -12,6 +12,7 @@
         android:paddingTop="56dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
+
         <ImageView android:src="@drawable/hi_res_icon"
             android:layout_width="wrap_content"
             android:layout_height="150dp"
