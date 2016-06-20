@@ -26,7 +26,9 @@
             <EditText android:id="@+id/et_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/hint_username" />
+                android:hint="@string/hint_username"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_person_white_24dp"/>
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -38,7 +40,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:hint="@string/hint_password"/>
+                android:hint="@string/hint_password"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_lock_white_24dp" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
