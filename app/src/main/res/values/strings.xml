@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Tracker</string>
+    <string name="tv_sign_up">Don\'t have an account? Sign up</string>
 </resources>

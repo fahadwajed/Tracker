@@ -1,9 +1,11 @@
-package co.gobd.tracker;
+package co.gobd.tracker.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import co.gobd.tracker.R;
+
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
