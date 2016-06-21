@@ -130,6 +130,7 @@
     <dimen name="material_component_text_full_width_single_line_text_field_text_top_and_bottom_padding">
         20dp
     </dimen>
+    <dimen name="fab_margin">16dp</dimen>
     <!-- Toolbars -->
     <!-- Tooltips -->
 </resources>
