@@ -17,9 +17,9 @@
     <!-- https://developer.android.com/reference/android/R.color.html -->
     <!-- https://developer.android.com/reference/android/graphics/Color.html -->
     <!-- Material design color palette (Last update: May 2016 release) -->
-    <color name="colorPrimary">#FFC107</color>
-    <color name="colorPrimaryDark">#FFA000</color>
-    <color name="colorAccent">#FFC107</color>
+    <color name="colorPrimary">#8BC34A</color>
+    <color name="colorPrimaryDark">#689F38</color>
+    <color name="colorAccent">#8BC34A</color>
 
     <!-- Red -->
     <color name="material_red_50">#FFEBEE</color>
