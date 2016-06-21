@@ -8,7 +8,6 @@ import java.util.List;
 
 import co.gobd.tracker.model.job.order.Order;
 import co.gobd.tracker.model.job.task.JobTask;
-import co.gobd.tracker.utility.Constant;
 
 /**
  * Created by fahad on 4/25/16.
