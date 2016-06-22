@@ -18,6 +18,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors{
+        /* Development Version */
+        dev{
+            manifestPlaceholders = [
+                    appName: "GO! Asset Dev"
+            ]
+        }
+        /* Production Version */
+        prod{
+            manifestPlaceholders = [
+                    appName: "GO! Asset"
+            ]
+        }
+    }
 }
 
 dependencies {
