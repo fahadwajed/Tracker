@@ -1,4 +1,4 @@
-package co.gobd.tracker.ui;
+package co.gobd.tracker.ui.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
