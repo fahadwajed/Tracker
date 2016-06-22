@@ -45,12 +45,6 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     @BindView(R.id.tv_signup)
     TextView tvSignUp;
 
-    /*@BindView(R.id.input_layout_userName)
-    TextInputLayout inputLayoutUserName;
-
-    @BindView(R.id.input_layout_password)
-    TextInputLayout inputLayoutPassword;*/
-
     private Unbinder unbinder;
 
     @Override
