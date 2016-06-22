@@ -24,7 +24,6 @@ public class AccountServiceImpl implements AccountService {
     public void register(String userName, String password, String confirmPassword, String email,
                          String phoneNumber, final RegistrationCallback registrationCallback) {
 
-        // Creates POJO
         Register register = this.createRegisterModel(userName, password, confirmPassword, email, phoneNumber);
 
         Call<Void> call = accountApi.register(register);

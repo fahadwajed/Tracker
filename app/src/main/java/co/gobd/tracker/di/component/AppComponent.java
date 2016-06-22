@@ -14,4 +14,5 @@ import dagger.Component;
 @Component(modules = {ApiModule.class, AppModule.class, ServiceModule.class})
 public interface AppComponent {
 
+    void inject()
 }
