@@ -4,6 +4,9 @@ import android.app.Application;
 
 import co.gobd.tracker.di.component.AppComponent;
 import co.gobd.tracker.di.component.DaggerAppComponent;
+import co.gobd.tracker.di.module.ApiModule;
+import co.gobd.tracker.di.module.AppModule;
+//import co.gobd.tracker.di.component.DaggerAppComponent;
 
 
 /**
@@ -16,7 +19,11 @@ public class GoAssetApplication extends Application {
     @Override
     public void onCreate(){
         super.onCreate();
-        component = DaggerAppComponent.builder().build();
+        /*component = DaggerAppComponent.builder().build();*/
+        component = DaggerAppComponent.builder()
+                .appModule(new AppModule(this))
+                .apiModule(new ApiModule())
+                .build();
     }
 
     public AppComponent getComponent(){

@@ -13,6 +13,7 @@ import co.gobd.tracker.model.job.Profile;
 import co.gobd.tracker.model.job.User;
 import co.gobd.tracker.model.job.order.Order;
 import co.gobd.tracker.model.job.order.OrderCart;
+import co.gobd.tracker.network.AccountApi;
 import co.gobd.tracker.utility.Constant;
 import co.gobd.tracker.utility.deserializer.AssignedJobDeserializer;
 import co.gobd.tracker.utility.deserializer.JobModelDeserializer;
@@ -90,5 +91,11 @@ public class ApiModule {
                 .client(okHttpClient)
                 .addConverterFactory(factory)
                 .build();
+    }
+
+    @Provides
+    @Singleton
+    public AccountApi providesAccountApi(@Named(Constant.BackendName.TASK_CAT) Retrofit retrofit){
+        return retrofit.create(AccountApi.class);
     }
 }
