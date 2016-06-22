@@ -2,9 +2,11 @@ package co.gobd.tracker.di.component;
 
 import javax.inject.Singleton;
 
+import co.gobd.tracker.application.GoAssetApplication;
 import co.gobd.tracker.di.module.ApiModule;
 import co.gobd.tracker.di.module.AppModule;
 import co.gobd.tracker.di.module.ServiceModule;
+import co.gobd.tracker.ui.activity.LoginActivity;
 import dagger.Component;
 
 /**
@@ -14,5 +16,6 @@ import dagger.Component;
 @Component(modules = {ApiModule.class, AppModule.class, ServiceModule.class})
 public interface AppComponent {
 
-    void inject()
+    void inject(GoAssetApplication target);
+    void inject(LoginActivity target);
 }
