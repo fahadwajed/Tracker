@@ -7,6 +7,7 @@ import co.gobd.tracker.di.module.ApiModule;
 import co.gobd.tracker.di.module.AppModule;
 import co.gobd.tracker.di.module.ServiceModule;
 import co.gobd.tracker.ui.activity.LoginActivity;
+import co.gobd.tracker.ui.activity.SignUpActivity;
 import dagger.Component;
 
 /**
@@ -18,4 +19,5 @@ public interface AppComponent {
 
     void inject(GoAssetApplication target);
     void inject(LoginActivity target);
+    void inject(SignUpActivity target);
 }

@@ -21,10 +21,7 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
-    public void register(String userName, String password, String confirmPassword, String email,
-                         String phoneNumber, final RegistrationCallback registrationCallback) {
-
-        Register register = this.createRegisterModel(userName, password, confirmPassword, email, phoneNumber);
+    public void getRegister(Register register, final RegistrationCallback registrationCallback) {
 
         Call<Void> call = accountApi.register(register);
 
@@ -110,13 +107,4 @@ public class AccountServiceImpl implements AccountService {
         });
     }
 
-    private Register createRegisterModel(String userName, String password,
-                                         String confirmPassword,
-                                         String email, String phoneNumber){
-
-        Register register = new Register(userName, password, confirmPassword, email, phoneNumber);
-
-        return register;
-
-    }
 }

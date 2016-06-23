@@ -36,7 +36,8 @@ public class Register {
      * @param PhoneNumber
      * @param UserName
      */
-    public Register(String UserName, String Password, String ConfirmPassword, String Email, String PhoneNumber ) {
+    public Register(String UserName, String Password, String ConfirmPassword,
+                    String Email, String PhoneNumber) {
         this.UserName = UserName;
         this.Password = Password;
         this.ConfirmPassword = ConfirmPassword;
@@ -171,5 +172,4 @@ public class Register {
     public void setType(String Type) {
         this.Type = Type;
     }
-
 }
