@@ -1,4 +1,4 @@
-package co.gobd.tracker.di.module;
+package co.gobd.tracker.dependencyinjection.module;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

@@ -1,4 +1,4 @@
-package co.gobd.tracker.di.module;
+package co.gobd.tracker.dependencyinjection.module;
 
 import javax.inject.Singleton;
 

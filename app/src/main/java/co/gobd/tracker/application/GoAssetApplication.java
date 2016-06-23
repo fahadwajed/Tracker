@@ -2,11 +2,10 @@ package co.gobd.tracker.application;
 
 import android.app.Application;
 
-import co.gobd.tracker.di.component.AppComponent;
-import co.gobd.tracker.di.component.DaggerAppComponent;
-import co.gobd.tracker.di.module.ApiModule;
-import co.gobd.tracker.di.module.AppModule;
-//import co.gobd.tracker.di.component.DaggerAppComponent;
+import co.gobd.tracker.dependencyinjection.component.AppComponent;
+import co.gobd.tracker.dependencyinjection.component.DaggerAppComponent;
+import co.gobd.tracker.dependencyinjection.module.ApiModule;
+import co.gobd.tracker.dependencyinjection.module.AppModule;
 
 
 /**

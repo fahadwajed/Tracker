@@ -1,11 +1,11 @@
-package co.gobd.tracker.di.component;
+package co.gobd.tracker.dependencyinjection.component;
 
 import javax.inject.Singleton;
 
 import co.gobd.tracker.application.GoAssetApplication;
-import co.gobd.tracker.di.module.ApiModule;
-import co.gobd.tracker.di.module.AppModule;
-import co.gobd.tracker.di.module.ServiceModule;
+import co.gobd.tracker.dependencyinjection.module.ApiModule;
+import co.gobd.tracker.dependencyinjection.module.AppModule;
+import co.gobd.tracker.dependencyinjection.module.ServiceModule;
 import co.gobd.tracker.ui.activity.LoginActivity;
 import co.gobd.tracker.ui.activity.SignUpActivity;
 import dagger.Component;
