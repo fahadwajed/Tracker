@@ -1,5 +1,6 @@
 package co.gobd.tracker.ui.activity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
@@ -47,6 +48,8 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     TextView tvSignUp;
 
     private Unbinder unbinder;
+
+    ProgressDialog progressDialog;
 
     @Override
     protected void onDestroy(){
@@ -105,12 +108,15 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void startProgress() {
-
+        progressDialog = new ProgressDialog(this, R.style.AppTheme_Dark_Dialog);
+        progressDialog.setIndeterminate(true);
+        progressDialog.setMessage("Authenticating... ");
+        progressDialog.show();
     }
 
     @Override
     public void stopProgress() {
-
+        progressDialog.dismiss();
     }
 
     @Override
@@ -121,8 +127,8 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void startMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, MainActivity.class);
+        //startActivity(intent);
     }
 
     @Override

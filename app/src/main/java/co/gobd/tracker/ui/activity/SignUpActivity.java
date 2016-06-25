@@ -1,5 +1,6 @@
 package co.gobd.tracker.ui.activity;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
@@ -48,6 +49,8 @@ public class SignUpActivity extends AppCompatActivity implements SignUpView{
     Button btnSignUp;
 
     private Unbinder unbinder;
+
+    ProgressDialog progressDialog;
 
     @Override
     protected void onDestroy(){
@@ -131,7 +134,7 @@ public class SignUpActivity extends AppCompatActivity implements SignUpView{
 
     @Override
     public void stopProgress() {
-
+        progressDialog.dismiss();
     }
 
     @Override
@@ -142,7 +145,10 @@ public class SignUpActivity extends AppCompatActivity implements SignUpView{
 
     @Override
     public void startProgress() {
-
+        progressDialog = new ProgressDialog(this, R.style.AppTheme_Dark_Dialog);
+        progressDialog.setIndeterminate(true);
+        progressDialog.setMessage("Registering... ");
+        progressDialog.show();
     }
 
     @Override
